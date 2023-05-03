@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IpHlpApidotnet</name>
+    </assembly>
+    <members>
+        <member name="T:IpHlpApidotnet.TCPUDPConnection">
+            <summary>
+            Store information concerning single TCP/UDP connection
+            </summary>
+        </member>
+        <member name="M:IpHlpApidotnet.SortConnections.CompareConnections(IpHlpApidotnet.TCPUDPConnection,IpHlpApidotnet.TCPUDPConnection)">
+            <summary>
+            Method is used to compare two <seealso cref="T:IpHlpApidotnet.TCPUDPConnection"/>. 
+            
+            </summary>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IpHlpApidotnet.TCPUDPConnections">
+            <summary>
+            Store information concerning TCP/UDP connections
+            </summary>
+        </member>
+        <member name="P:IpHlpApidotnet.TCPUDPConnections.DeadConnsMultiplier">
+            <summary>
+            Coefficient multiplies on AutoRefresh timer interval. The parameter determinate how 
+            often detecting of dead connections occures.
+            </summary>
+        </member>
+        <member name="P:IpHlpApidotnet.TCPUDPConnections.Timer">
+            <summary>
+            AutoRefresh timer. 
+            </summary>
+        </member>
+        <member name="E:IpHlpApidotnet.TCPUDPConnections.ItemAdded">
+            <summary>
+            Event occures when <seealso cref="T:IpHlpApidotnet.TCPUDPConnection"/> deleted.
+            </summary>
+        </member>
+        <member name="E:IpHlpApidotnet.TCPUDPConnections.ItemChanged">
+            <summary>
+            Event occures when <seealso cref="T:IpHlpApidotnet.TCPUDPConnection"/> changed.
+            </summary>
+        </member>
+        <member name="E:IpHlpApidotnet.TCPUDPConnections.ItemInserted">
+            <summary>
+            Event occures when <seealso cref="T:IpHlpApidotnet.TCPUDPConnection"/> inserted into list.
+            </summary>
+        </member>
+        <member name="E:IpHlpApidotnet.TCPUDPConnections.ItemDeleted">
+            <summary>
+            Event occures when <seealso cref="T:IpHlpApidotnet.TCPUDPConnection"/> deleted from list. 
+            </summary>
+        </member>
+        <member name="M:IpHlpApidotnet.TCPUDPConnections.Refresh">
+            <summary>
+            Refresh connections list.
+            </summary>
+        </member>
+        <member name="M:IpHlpApidotnet.TCPUDPConnections.RefreshTCP">
+            <summary>
+            Refresh TCP connections list.
+            </summary>
+        </member>
+        <member name="M:IpHlpApidotnet.TCPUDPConnections.RefreshUDP">
+            <summary>
+            Refresh UDP connections list.
+            </summary>
+        </member>
+        <member name="F:IpHlpApidotnet.TCPUDPConnections._LastRefreshDateTime">
+            <summary>
+            Get last refresh <seealso cref="T:System.DateTime"/>.
+            </summary>
+        </member>
+        <member name="P:IpHlpApidotnet.TCPUDPConnections.AutoRefresh">
+            <summary>
+            Enable or Disable connections list auto refresh.
+            </summary>
+        </member>
+        <member name="M:IpHlpApidotnet.TCPUDPConnections.Add(IpHlpApidotnet.TCPUDPConnection)">
+            <summary>
+            Add new <seealso cref="T:IpHlpApidotnet.TCPUDPConnection"/> connection.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:IpHlpApidotnet.TCPUDPConnections.CheckForClosedConnections">
+            <summary>
+            Method detect and remove from list all dead connections.
+            </summary>
+        </member>
+    </members>
+</doc>
